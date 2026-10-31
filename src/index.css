@@ -1,0 +1,51 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "IBM Plex Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "IBM Plex Serif", ui-serif, Georgia, serif;
+  --color-ink: #12202b;
+  --color-ink-2: #1d3344;
+  --color-paper: #f4efe6;
+  --color-sand: #e7ddd0;
+  --color-clay: #c45c26;
+  --color-moss: #3f6b4f;
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  background: #f4efe6;
+  color: #12202b;
+  font-family: var(--font-sans);
+}
+
+.roster-grid {
+  display: grid;
+}
+
+.cell-work {
+  background: #eef6ef;
+  color: #244a32;
+}
+.cell-weekly_off {
+  background: #dce8f5;
+  color: #1b3f66;
+}
+.cell-leave,
+.cell-comp_off {
+  background: #f8e2c4;
+  color: #7a4a12;
+}
+.cell-public_holiday {
+  background: #ece7f4;
+  color: #4d3d6b;
+}
+.cell-not_required {
+  background: #efeae3;
+  color: #7b7368;
+}
